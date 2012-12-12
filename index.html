@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>12G Task Scheduler</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 60px;
+                padding-bottom: 40px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="brand" href="#">12G Task Scheduler </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <h1>Calculate Your Real Estimate</h1>
+            <p>Fill in the form below to calculate your real estimate</p>
+            <form id="realEstimateInput" class="form-horizontal">
+              <div class="control-group">
+                <label class="control-label" for="estimate">Your Estimate in Minutes (unbuffered)</label>
+                <div class="controls">
+                  <input type="text" id="estimate" placeholder="ex. 90">
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="confidence">Confidence</label>
+                <div class="controls">
+                  <input type="text" id="confidence" placeholder="1.0 - 10.0">
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="buffer">Buffer</label>
+                <div class="controls">
+                  <input type="text" id="buffer" value="1.25">
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="controls">
+                  <button id="calculate" type="button" class="btn">Calculate</button>
+                </div>
+              </div>
+            </form>
+
+
+            <!-- Example row of columns -->
+            <div class="row">
+                <div class="span12">
+                    <h2>Your Real Estimate Is: <span id="realEstimate"></span></h2>
+                </div>
+            </div>
+
+            <hr>
+
+            <footer>
+                <p>&copy; 12G Solutions Inc 2012</p>
+            </footer>
+
+        </div> <!-- /container -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
