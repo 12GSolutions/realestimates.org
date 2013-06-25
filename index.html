@@ -19,7 +19,7 @@
         </style>
         <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="components/modernizer/modernizer.js"></script>
+        <script src="components/modernizr/modernizr.js"></script>
         <script src="components/angular/angular.min.js"></script>
         <script src="scripts/main.js"></script>
     </head>
@@ -42,7 +42,8 @@
                     ng-model="estimate"
                     name="estimate"
                     required
-                    ng-required="true">
+                    ng-required="true"
+                    ng-change="estimateChanged()">
                 </div>
               </div>
               <div class="control-group">
@@ -76,7 +77,7 @@
 
 
             <!-- Example row of columns -->
-            <div class="row real-estimate">
+            <div id="realEstimate" class="row real-estimate">
                 <div class="span12">
                     <span class="lead">Real Estimate: {{ estimate * risk * buffer }}</span> <small>({{estimate}} x {{risk}} x {{buffer}})</small>
 
