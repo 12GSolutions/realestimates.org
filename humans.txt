@@ -1,0 +1,17 @@
+/* TEAM */
+  Lead:Maxime Rousseaux-Bridle
+  Contact: max [at] 12gsolutions.com
+  Twitter: @maxrb
+  From:Milton, Ontario, Canada
+
+/* THANKS */
+
+  Funded By: 12G Solutions Inc
+  Twitter: @12GSolutions
+  From:Milton, Ontario, Canada
+
+/* SITE */
+  Last update:2013/06/26
+  Language: English
+  Doctype:HTML5
+  IDE: Sublime Text 2

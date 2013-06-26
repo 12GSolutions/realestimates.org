@@ -1,20 +1,48 @@
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
 #realEstimate {
   color: #81bd7b;
 }
 
-input[type="number"] {
+/*input[type="number"],
+input[type="text"] {
   height:48px;
   font-size:125%;
 }
-
+*/
 .control-label {
   font-size:125%;
 }
 
 .real-estimate small { padding-left: 24px; color:#909090 }
+
+
+.risk {
+  background-color:#FFF;
+  font-size:120%;
+  text-shadow: 0px 1px 1px rgba(230, 230, 230, 1);
+}
+.risk-1 {
+  color: #6ab43b;
+}
+.risk-2 {
+  color: #c8b941;
+}
+.risk-3 {
+  color: #c88341;
+}
+.risk-4 {
+  color: #c85a41;
+}
+.risk-5,
+.risk-5 a {
+  color: #ba3d57;
+}
+
+#realEstimate::-webkit-outer-spin-button,
+#realEstimate::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
