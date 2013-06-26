@@ -47,3 +47,52 @@ input[type="text"] {
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html, body {
+    height: 100%;
+}
+footer {
+    color: #666;
+    background: #E9E9E9;
+    padding: 17px 0 18px 0;
+    border-top: 1px solid #CCC;
+}
+/*footer a {
+    color: #999;
+}
+footer a:hover {
+    color: #efefef;
+}*/
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -63px;
+}
+.push {
+    height: 63px;
+}
+/* not required for sticky footer; just pushes hero down a bit */
+.wrapper > .container {
+    padding-top: 60px;
+}
+
+/* responsive footer fix by Aalaap Ghag */
+@media (max-width: 767px) {
+    body {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    footer, .wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.container {
+    max-width: 940px;
+}
